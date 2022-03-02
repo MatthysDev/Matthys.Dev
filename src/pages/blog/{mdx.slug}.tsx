@@ -12,21 +12,21 @@ const BlogPost = ({ data }) => {
         <div className="pb-12">
           <p className=" pt-2 pb-2">{data.mdx.frontmatter.date}</p>
           <div className="flex-initial">
-            <div className="w-3/4 lg:w-5/12 m-auto border-purple-400 border-2">
+            <div className="w-3/4 lg:w-5/12 m-auto ">
               <GatsbyImage
-                className="pt-6"
+                className="pt-6 "
                 image={image}
                 alt={data.mdx.frontmatter.hero_image_alt}
               />
             </div>
             <div>
-              <p className="pt-2 pb-2">
+              <p className="pt-2 pb-6">
                 {" "}
                 <a href={data.mdx.frontmatter.hero_image_credit_link}>
                   {data.mdx.frontmatter.hero_image_credit_text}
                 </a>
               </p>
-              <div className="prose m-auto text-left prose-a:text-purple-300 prose-a:no-underline prose-headings:text-white prose-h1:border-b-2 prose-headings:pb-2 prose-h1:border-purple-400 w-5/6 text-white">
+              <div className="prose m-auto text-left prose-a:text-purple-300 prose-a:no-underline prose-headings:text-white  prose-headings:pb-2  w-5/6 text-white prose-blockquote:text-white prose-table:text-white prose-figure:text-white prose-em:text-white prose-pre:text-white prose-tr:text-white prose-th:text-white prose-lead:text-white prose-code:text-gray-500">
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
               </div>
             </div>
