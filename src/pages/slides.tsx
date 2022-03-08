@@ -5,6 +5,10 @@ import Layout from "../components/layout";
 const SlidesPage = () => {
   return (
     <Layout pageTitle={"Slides"}>
+      <p className="text-2xl py-12">
+        To have a better experience with these slides, please use a computer !
+      </p>
+      <hr className="border-2 border-green-400 w-1/5 m-auto" />
       <div className="sm:flex-col md:flex md:flex-row m-auto h-2/3 my-8">
         <div className="m-auto h-2/3 sm:w-5/6 md:w-1/2 p-4 ">
           <p className="text-center pt-4  pl-2 pb-4 text-gray-400 hover:text-purple-400 text-2xl">
