@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => {
         <p>You can learn more about me on this page !</p>
       </div>
       <hr className="border-2 border-green-400 w-1/5 m-auto my-4" />
-      <div className="sm:flex-col md:flex md:flex-row m-auto h-2/3 ">
+      <div className="sm:flex-col md:flex md:flex-row m-auto h-2/3 py-8">
         <div className="m-auto h-2/3 sm:w-5/6 md:w-1/2 p-4 ">
           <p className=" pt-4 text-xl text-left">
             I currently study in Calais at the IUT to validate my bachelor's
@@ -29,7 +29,7 @@ const AboutPage = ({ data }) => {
         />
       </div>
       <hr className="border-2 border-green-400 w-1/5 sm:w-1/2  m-auto my-4" />
-      <div className="sm:flex-col md:flex md:flex-row text-xl m-auto h-2/3 mb-10">
+      <div className="sm:flex-col md:flex md:flex-row text-xl m-auto h-2/3 py-8">
         <img
           className="  border-purple-400 border-2 w-3/5 h-2/3 md:w-2/5 md:h-2/5 m-auto"
           src={url}
@@ -53,9 +53,30 @@ const AboutPage = ({ data }) => {
           <div className="mt-8 m-auto items-center"></div>
         </div>
       </div>
-      <div className="text-xl">
-        <hr className="border-2 border-green-400 w-1/5 m-auto" />
+
+      <hr className="border-2 border-green-400 w-1/5 m-auto" />
+      <div className="sm:flex-col md:flex md:flex-row m-auto h-2/3 py-8">
+        <div className="m-auto h-2/3 sm:w-5/6 md:w-1/2 p-4 ">
+          <p className=" pt-4 text-xl text-left">
+            As a GraphQL, Heroku, Hasura, Apollo and React Native user, React
+            native Bordeaux invite me to give a talk about my Product Hunt
+            clone. This was{" "}
+            <a
+              href="https://www.youtube.com/watch?v=rQzVtOhz6O0"
+              className="text-purple-400"
+            >
+              my first talk !
+            </a>
+          </p>
+        </div>
+
+        <StaticImage
+          className="border-purple-400 border-2 w-3/5 h-2/3 md:w-2/5 md:h-2/5 m-auto my-4 "
+          src="../images/talk.jpg"
+          alt={""}
+        />
       </div>
+      <hr className="border-2 border-green-400 w-1/5 m-auto" />
 
       <MyTools />
     </Layout>
