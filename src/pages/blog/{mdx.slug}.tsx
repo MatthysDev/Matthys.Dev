@@ -12,7 +12,7 @@ const BlogPost = ({ data }) => {
         <div className="pb-12">
           <p className=" pt-2 pb-2">{data.mdx.frontmatter.date}</p>
           <div className="flex-initial">
-            <div className="w-3/4 lg:w-5/12 m-auto ">
+            <div className="w-3/4 lg:w-1/4 m-auto ">
               <GatsbyImage
                 className="pt-6 "
                 image={image}
@@ -20,7 +20,7 @@ const BlogPost = ({ data }) => {
               />
             </div>
             <div>
-              <p className="pt-2 pb-6">
+              <p className="pt-2 pb-16">
                 {" "}
                 <a href={data.mdx.frontmatter.hero_image_credit_link}>
                   {data.mdx.frontmatter.hero_image_credit_text}
