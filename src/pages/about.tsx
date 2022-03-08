@@ -6,7 +6,7 @@ import { graphql } from "gatsby";
 import MyTools from "../components/MyTools";
 // Step 2: Define your component
 const AboutPage = ({ data }) => {
-  const url = data.allYoutubeVideo.edges[0].node.thumbnail.url;
+  const url = data.allYoutubeVideo.edges[1].node.thumbnail.url;
   return (
     <Layout pageTitle="About Me">
       <div className="px-4 pt-6 text-center text-xl mb-10">
