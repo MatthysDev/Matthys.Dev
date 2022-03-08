@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "..//images/wait.gif";
+import logo from "..//images/loading.gif";
 export default function Airtable() {
   const [isLoaded, setILoaded] = useState(false);
 
@@ -11,7 +11,7 @@ export default function Airtable() {
     <>
       {!isLoaded ? (
         <img
-          className="m-auto mt-8 w-2/3 border-2 rounded-lg  border-purple-400"
+          className="m-auto mt-8 w-1/2  rounded-lg  "
           src={logo}
           alt={"Contacting Matthys"}
         />
