@@ -13,7 +13,7 @@ const Layout = ({ pageTitle, children }) => {
     }
   `);
   return (
-    <div className=" bg-gray-800 md:h-full text-white ">
+    <div className=" bg-gray-900 md:h-full text-white ">
       <div className="text-center lg:m-auto font-sans">
         <div className="sm:flex-col lg:flex lg:flex-row">
           <Sidebar />

@@ -7,7 +7,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
   return (
-    <div className="bg-gray-800 overflow-auto h-screen">
+    <div className="bg-gray-900 overflow-auto h-screen">
       <Layout pageTitle={data.mdx.frontmatter.title}>
         <div className="pb-12">
           <p className=" pt-2 pb-2">{data.mdx.frontmatter.date}</p>

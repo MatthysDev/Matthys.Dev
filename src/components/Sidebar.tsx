@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Burger from "./burger";
 import Cross from "./cross";
+import Logo from "./Logo";
 
 const activeStyles = {
   color: " 	mediumpurple",
@@ -21,14 +22,11 @@ function Sidebar() {
         </button>
       </div>
 
-      <div className="invisible w-0 h-0 p-0 lg:visible font-roboto lg:p-8 md:m-0 sm:w-full lg:h-screen lg:w-72   bg-gray-800 md:border-r-2 lg:border-green-400 lg:space-y-8 space-y-8 border-b-2 lg:border-b-0 border-green-400 ">
-        <div className="flex flex-col text-gray-500 text-2xl ">
+      <div className="invisible w-0 h-0 p-0 lg:visible font-roboto lg:p-8 md:m-0 sm:w-full lg:h-screen lg:w-72   bg-gray-900 md:border-r-2 lg:border-green-400 lg:space-y-8 space-y-8 border-b-2 lg:border-b-0 border-green-400 ">
+        <div className="flex flex-col text-2xl items-center pt-8">
           <Link to="/">
-            <StaticImage
-              className="border-purple-300 border-2 m-auto w-1/3 h-1/3  rounded-3xl lg:w-full "
-              src="../images/grayLogo.png"
-              alt={"test"}
-            />
+            <Logo />
+            <p className="text-2xl pt-4 pb-8">M.Dev</p>
           </Link>
         </div>
 
@@ -75,13 +73,10 @@ function Sidebar() {
           toggleNav ? `visible lg:invisible lg:w-0 lg:h-0 ` : `hidden`
         }`}
       >
-        <div className="font-roboto p-8 md:m-0 sm:w-full lg:w-72 h-screen  bg-gray-800  lg:border-green-400 lg:space-y-8 space-y-8 border-b-2 lg:border-b-0 border-green-400 ">
-          <div className="flex flex-col text-gray-500 text-2xl m-auto">
-            <StaticImage
-              className="border-purple-400 border-2 m-auto w-1/3 h-1/3  rounded-3xl lg:w-full "
-              src="../images/grayLogo.png"
-              alt={"test"}
-            />
+        <div className="font-roboto p-8 md:m-0 sm:w-full lg:w-72 h-screen  bg-gray-900  lg:border-green-400 lg:space-y-8 space-y-8 border-b-2 lg:border-b-0 border-green-400 ">
+          <div className="flex flex-col  text-2xl m-auto items-center">
+            <Logo />
+            <p className="text-2xl pt-4 pb-8">M.Dev</p>
           </div>
 
           <Link
