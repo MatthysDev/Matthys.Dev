@@ -19,8 +19,16 @@ const MyProjects = () => {
       lien: "https://www.artaufeminin.fr",
     },
     {
+      title: "React Native Heroes",
+      logo: "https://b.thumbs.redditmedia.com/0u5zVNYsWhbZtr45bDy9FskeK3BOD1a3291XeQPg1Kc.png",
+      what: "React-Native-Heroes is a React Native application to discover the best React Native Developers.",
+      description:
+        "I made a clone of Product Hunt with React Native, GraphQL, Apollo, Hasura, Heroku and more.",
+      lien: "https://react-native-heroes-matthysdev.vercel.app/",
+    },
+    {
       title: "Matthys.dev",
-      logo: "https://raw.githubusercontent.com/MatthysDucrocq/MatthysDev/main/src/images/grayLogo.png",
+      logo: "https://raw.githubusercontent.com/MatthysDucrocq/MatthysDev/main/src/images/blackLogo.png",
       what: "This website is my portfolio, you can see my projects and contact me.",
       description:
         "With this website, Recruiters can find my projects and contact me if they are interested in my profile.",
