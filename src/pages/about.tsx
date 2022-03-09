@@ -23,7 +23,7 @@ const AboutPage = ({ data }) => {
         </div>
 
         <StaticImage
-          className="border-purple-400 border-2 w-3/5 h-2/3 md:w-2/5 md:h-2/5 m-auto my-4 "
+          className="border-purple-400 border-2 w-4/5 h-2/3 md:w-2/5 md:h-2/5 m-auto my-4 "
           src="../images/IUT.jpg"
           alt={""}
         />
@@ -31,7 +31,7 @@ const AboutPage = ({ data }) => {
       <hr className="border-2 border-green-400 w-1/5 sm:w-1/2  m-auto my-4" />
       <div className="sm:flex-col md:flex md:flex-row text-xl m-auto h-2/3 py-8">
         <img
-          className="  border-purple-400 border-2 w-3/5 h-2/3 md:w-2/5 md:h-2/5 m-auto"
+          className="  border-purple-400 border-2 w-4/5 h-2/3 md:w-2/5 md:h-2/5 m-auto"
           src={url}
           alt=""
         />
@@ -62,7 +62,7 @@ const AboutPage = ({ data }) => {
             native Bordeaux invite me to give a talk about my Product Hunt
             clone. This was{" "}
             <a
-              href="https://www.youtube.com/watch?v=rQzVtOhz6O0"
+              href="https://www.youtube.com/watch?v=rQzVtOhz6O0g"
               className="text-purple-400"
             >
               my first talk !
@@ -71,7 +71,7 @@ const AboutPage = ({ data }) => {
         </div>
 
         <StaticImage
-          className="border-purple-400 border-2 w-3/5 h-2/3 md:w-2/5 md:h-2/5 m-auto my-4 "
+          className="border-purple-400 border-2 w-4/5 h-2/3 md:w-2/5 md:h-2/5 m-auto my-4 "
           src="../images/talk.jpg"
           alt={""}
         />
