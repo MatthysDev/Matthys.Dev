@@ -97,32 +97,29 @@ const MyProjects = () => {
       <ul className="liste">
         {allProjects.map((project) => {
           return (
-            <>
-              <div className="flex flex-col md:flex-row mt-12 mb-12 m-auto items-center">
-                <div className=" justify-center text-center w-1/3">
-                  <a
-                    href={project.lien}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400"
-                  >
-                    <img
-                      className="m-auto border-2 rounded-md border-purple-400 "
-                      src={project.logo}
-                      alt=""
-                      width={128}
-                      height={128}
-                    />
-
-                    <p className="p-4 ">{project.title}</p>
-                  </a>
-                </div>
-                <div className="  w-2/3 text-justify md:text-left">
-                  <div className="text-white pb-2">{project.what}</div>
-                  <div className="text-white">{project.description}</div>
-                </div>
+            <div className="flex flex-col md:flex-row py-12  items-center ">
+              <div className=" justify-center text-center w-1/3 align-middle my-auto pb-12 md:pb-0">
+                <a
+                  href={project.lien}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-purple-400"
+                >
+                  <img
+                    className="m-auto border-2 rounded-md border-purple-400 "
+                    src={project.logo}
+                    alt=""
+                    width={128}
+                    height={128}
+                  />
+                  <p className=" py-2">{project.title}</p>
+                </a>
               </div>
-            </>
+              <div className="  w-2/3 text-justify md:text-left align-middle -mt-8">
+                <div className="text-white pb-2">{project.what}</div>
+                <div className="text-white">{project.description}</div>
+              </div>
+            </div>
           );
         })}
       </ul>
