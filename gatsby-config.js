@@ -1,8 +1,19 @@
+require("dotenv").config({
+  path: ".env",
+});
+
 module.exports = {
   siteMetadata: {
     title: "Matthys.dev",
   },
   plugins: [
+    {
+      resolve: "gatsby-source-prismic",
+      options: {
+        repositoryName: process.env.GATSBY_PRISMIC_REPO,
+        customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN,
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
