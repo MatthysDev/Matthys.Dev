@@ -6,7 +6,7 @@ Matthys.dev is my personnal website that i made with Gatsby
 Download Nodes_modules :
 
 ```bash
-npm install
+yarn
 ```
 
 ## Usage
