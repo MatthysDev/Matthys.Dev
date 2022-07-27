@@ -2,7 +2,13 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Sidebar from "./Sidebar";
 
-const Layout = ({ pageTitle, children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+  pageTitle?: string;
+  withoutHeader?: boolean;
+}
+
+const Layout = ({ pageTitle, children, withoutHeader }: LayoutProps) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -22,9 +28,11 @@ const Layout = ({ pageTitle, children }) => {
               <title>
                 {pageTitle} | {data.site.siteMetadata.title}
               </title>
-              <header className=" border-b-2 border-green-400 text-white text-3xl lg:text-5xl font-bold pb-8 ">
-                {data.site.siteMetadata.title}
-              </header>
+              {withoutHeader ? null : (
+                <header className=" border-b-2 border-green-400 text-white text-3xl lg:text-5xl font-bold pb-8 ">
+                  {data.site.siteMetadata.title}
+                </header>
+              )}
 
               <p className=" m-auto">{children}</p>
             </main>
