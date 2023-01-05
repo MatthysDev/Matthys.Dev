@@ -1,8 +1,9 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Sidebar from "./Sidebar";
+import Header from "./Header";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children, pageTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -19,12 +20,7 @@ const Layout = ({ pageTitle, children }) => {
           <Sidebar />
           <div className="overflow-y-scroll h-screen m-auto justify-center w-full  pt-0 lg:pt-4 font-roboto">
             <main className="m-auto lg:mt-4 justify-center w-11/12 md:w-2/3 pt-4">
-              <title>
-                {pageTitle} | {data.site.siteMetadata.title}
-              </title>
-              <header className=" border-b-2 border-green-400 text-white text-3xl lg:text-5xl font-bold pb-8 ">
-                {data.site.siteMetadata.title}
-              </header>
+              <Header pageTitle={pageTitle} />
 
               <p className=" m-auto">{children}</p>
             </main>
