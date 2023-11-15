@@ -32,6 +32,13 @@ function Sidebar() {
 
         <Link
           className="flex flex-col pt-2 pb-4 relative font-bold text-gray-400 hover:text-purple-400"
+          to="/posters"
+          activeStyle={activeStyles}
+        >
+          Posters
+        </Link>
+        <Link
+          className="flex flex-col pt-2 pb-4 relative font-bold text-gray-400 hover:text-purple-400"
           to="/about"
           activeStyle={activeStyles}
         >
@@ -69,9 +76,8 @@ function Sidebar() {
       </div>
 
       <div
-        className={`${
-          toggleNav ? `visible lg:invisible lg:w-0 lg:h-0 ` : `hidden`
-        }`}
+        className={`${toggleNav ? `visible lg:invisible lg:w-0 lg:h-0 ` : `hidden`
+          }`}
       >
         <div className="font-roboto p-8 md:m-0 sm:w-full lg:w-72 h-screen  bg-gray-900  lg:border-green-400 lg:space-y-8 space-y-8 border-b-2 lg:border-b-0 border-green-400 ">
           <div className="flex flex-col  text-2xl m-auto items-center">

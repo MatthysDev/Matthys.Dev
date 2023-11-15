@@ -2,12 +2,12 @@ import * as React from "react";
 import Layout from "../components/layout";
 import MyPosters from "../components/MyPosters";
 
-const Poster = () => {
+const Posters = () => {
     return (
-        <Layout pageTitle="Poster">
+        <Layout pageTitle="Posters">
             <MyPosters />
         </Layout>
     );
 };
 
-export default Poster;
+export default Posters;
