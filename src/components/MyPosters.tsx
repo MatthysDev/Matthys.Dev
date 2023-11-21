@@ -11,7 +11,42 @@ const MyPosters = () => {
             title: "Lomepal Mauvais Ordre",
             logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/lomepal-light.png",
             version: 'Light'
-        }
+        },
+        {
+            title: "Angry Monkey",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/bad-monkey.png",
+            version: ''
+        },
+        {
+            title: "Chill Monkey",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/good-monkey.png",
+            version: ''
+        },
+        {
+            title: "Chill Fish",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/fish.png",
+            version: ''
+        },
+        {
+            title: "Chill Fox",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/fox.png",
+            version: ''
+        },
+        {
+            title: "Chill Shark",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/shark.png",
+            version: ''
+        },
+        {
+            title: "Chill Skeleton",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/skeleton.png",
+            version: ''
+        },
+        {
+            title: "Chill Snake",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/snake.png",
+            version: ''
+        },
     ];
 
     return (
