@@ -22,11 +22,11 @@ const MyPosters = () => {
             logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/good-monkey.png",
             version: ''
         },
-        // {
-        //     title: "Chill Fish",
-        //     logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/fish.png",
-        //     version: ''
-        // },
+        {
+            title: "Chill Fish",
+            logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/fish.png",
+            version: ''
+        },
         {
             title: "Chill Fox",
             logo: "https://raw.githubusercontent.com/MatthysDev/Matthys.Dev/main/src/images/posters/fox.png",
