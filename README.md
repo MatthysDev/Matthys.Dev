@@ -1,6 +1,6 @@
-# Matthys.dev
+# Matthys.dev ( Deprecated version ! )
 
-Matthys.dev is my personnal website that i made with Gatsby
+Matthys.dev is my (old) personnal website that i made with Gatsby
 
 ## Installation
 Download Nodes_modules :
